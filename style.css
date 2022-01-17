@@ -1,0 +1,206 @@
+  h1,h2,h3,h4,h5,h6,p{
+    font-family: 'Style Script', cursive;
+}
+
+span  {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.logo-design{
+    color: brown;
+}
+.img-width{
+    width: 96px;
+}
+.btn-primary{
+    background-color: rgb(25, 134, 153);
+    padding: 20px 42px ;
+    color: slateblue;
+    border-color: rgb(25, 134, 153);
+    position: relative;
+    z-index: 1;
+}
+.btn-primary::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:100%;
+    height: 0;
+    background-color: rgb(214, 42, 12);
+    border-color:rgb(214, 42, 12) ;
+    transition: .3s;
+    z-index: -1;
+
+   
+}
+.btn-primary:hover{
+    background-color:rgb(214, 42, 12) ;
+    border-color:rgb(214, 42, 12)  ;
+}
+.btn-primary:hover::after{
+   height: 100%;
+  
+}
+/*manu-se*/
+ul.our-primary-manu{
+    font-size: 20px;
+   
+}
+ul.our-primary-manu li{
+display: block;
+}
+ul.our-primary-manu li a{
+display: inline-block;
+text-decoration: none;
+padding: 20px 26px ;
+color: black;
+}
+ul.our-primary-manu li a:hover{ }
+
+
+.banner-section{
+    background: url(.//img/banner2.jpg) no-repeat center center;
+    box-sizing: border-box;
+    padding: 150px 0;
+  
+}
+.banner-txt{
+    padding-top: 145px;
+
+}
+.banner-txt h2{
+    color: rgb(238, 67, 52);
+    font-size: 50px ;
+    margin-bottom: 108px;
+}
+.banner-p{
+    padding: 20px 250px;
+    font-size: 23px;
+    color: #235645;
+    
+    
+
+}
+
+.banner-profile{
+    padding: 10px 30px ;
+    margin-top: 40px;
+   
+}
+
+/*about*/
+.about-text{
+
+    color: rgb(119, 144, 94);
+}
+.about-text h1{
+    font-size: 100px ;
+    margin-bottom: 95px;
+ 
+}
+.p-text{
+    font-size: 80pxpx ;
+}
+.h2-text{
+    font-size: 60 px ;
+}
+
+.about-img{
+    margin-top: -185px;
+}
+/*service*/
+.service-section{
+    background-color: rgb(255, 249, 249);
+}
+.service-section h1{
+    color: rgb(67, 85, 31);
+    font-size: 60px ;
+}
+.card{
+   background-color: rgb(234, 243, 226);
+    padding: 30px 20px ;
+    position: relative;
+    transition: .4s;
+}
+.card:hover{
+    transform: translateY(-13px);
+ 
+}
+
+.card h2{
+    font-size: 60px ;
+}
+.card p{
+    font-size: 20px;
+}
+.card span{
+    text-align: center;
+    font-size: 50px ;
+color: rgb(48, 189, 214);
+}
+
+/* client*/
+.client-img{
+    width: 200px ;
+    height: auto;
+}
+.client-section{
+background: url(.//img/colorful-holographic-gradient-background-design-vector.jpg) no-repeat center;
+padding: 220px 0;
+box-sizing: border-box;
+}
+.col-lg-4{
+    box-shadow: 4px ,4px, 20px rgba(0, 0,0, .2) ;
+
+}
+
+.testemonial{
+    background-color: rgb(29, 29, 34);
+}
+ .bk{
+    color: white;
+    font-size: 60px ;
+}
+
+.testimonoial-slider{
+    padding: 45px 252px
+}
+
+.contactt{
+    text-align: center;
+}
+.footer h4{
+    color: white;
+}
+.footer p{
+    color: white;
+}
+.footer{
+    background-color: rgb(89, 89, 105);
+}
+
+
+/* deop-down-manu*/
+ul.our-primary-manu{}
+ul.our-primary-manu li{
+  position: relative;
+}
+ul.our-primary-manu li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 300px;
+    background: rgb(255, 255, 255);
+    opacity: 0;
+    visibility: hidden;
+   transform: scaleY(0);
+   transform-origin:top center ;
+    transition: .4s;
+}
+ul.our-primary-manu li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
